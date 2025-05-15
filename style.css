@@ -84,15 +84,11 @@ img.logo-header {
 
 @media (max-width: 768px) {
             img.logo-header {
-                max-width: 200px;
+                max-width: 175px;
             }
         }
 
-@media (max-width: 480px) {
-            img.logo-header {
-                max-width: 150px;
-            }
-        }
+
 
 
 
