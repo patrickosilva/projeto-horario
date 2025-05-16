@@ -127,17 +127,21 @@ div.imagem {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 768px) and (max-width: 1023px) {
   img.logo-header {
-    width: 200px;
+    width: 175px;
   }
 }
 
 @media (max-width: 500px) {
             img.logo-header {
-                width: 100px;
+                width: 120px;
             }
         }
+
+
+
+
 
 
 
