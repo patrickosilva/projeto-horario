@@ -123,19 +123,19 @@ div.imagem {
 
 @media (min-width: 1024px) {
   img.logo-header {
-    width: 300px;
+    width: 400px;
   }
 }
 
-@media (max-width: 768px) and (max-width: 1023px) {
+@media (max-width: 768px) and (max-width: 1023px)  {
   img.logo-header {
-    width: 175px;
+    width: 200px;
   }
 }
 
 @media (max-width: 500px) {
             img.logo-header {
-                width: 120px;
+                width: 150px;
             }
         }
 
