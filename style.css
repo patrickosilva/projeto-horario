@@ -11,10 +11,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     letter-spacing:2px;
+    overflow-x: hidden;
 }
  
 header#inicio {
@@ -41,7 +43,6 @@ nav {
 }
 
 main {
-    position: relative;
     display: flex;
     height: 100%;
 }
@@ -118,7 +119,6 @@ div.imagem {
     background-position: center;
     margin-top: 0px;
     margin-left: 5px;
-    height: 970px;
 }
 
 @media (min-width: 1024px) {
@@ -138,6 +138,29 @@ div.imagem {
                 width: 125px;
             }
         }
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    article#sobre, div.imagem {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    article#sobre {
+        padding: 20px;
+    }
+
+    div.imagem {
+        height: 300px; /* define uma altura visível */
+    }
+}
+
+
+
+
 
 
 
