@@ -121,9 +121,21 @@ div.imagem {
     height: 970px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
+  img.logo-header {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  img.logo-header {
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
             img.logo-header {
-                max-width: 175px;
+                width: 100px;
             }
         }
 
