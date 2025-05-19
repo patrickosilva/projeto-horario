@@ -81,6 +81,7 @@ hr {
 }
 
 .meu-botao {
+    font-family: 'Emilys Candy', Arial, Helvetica, sans-serif;
     background-color:#EC4FF0;
     color: white;
     padding: 15px 25px;
@@ -89,6 +90,7 @@ hr {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
 }
 
 .meu-botao:hover {
@@ -240,6 +242,51 @@ section#contatos {
     background-image: linear-gradient(to bottom, #834FF0, #B74EEF);
     padding: 50px;
 }
+
+.container-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espaço entre os botões */
+}
+
+.instagram, .whatsapp, .email {
+    font-family: 'Emilys Candy', Arial, Helvetica, sans-serif;
+    background-color:#EC4FF0;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.instagram:hover, .whatsapp:hover, .email:hover {
+    transform: scale(1.02);
+    background-color: #8485F5;
+}
+
+footer {
+    font-family: 'Cascadia Code', Arial, Helvetica, sans-serif;
+    color: #8485F5;
+    text-align: center;
+    padding: 20px;
+}
+
+.onda2 {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  margin-bottom: -5px; /* junta a próxima seção */
+}
+
+.onda2 svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color:#B74EEF;
+}
+
 
 
 
