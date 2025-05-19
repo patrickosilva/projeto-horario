@@ -111,7 +111,7 @@ div.imagem {
     background-size: cover;
     background-position: center;
     margin-top: 0px;
-    margin-left: 5px;
+    margin-left: 30px;
 }
 
 @media (min-width: 1024px) {
