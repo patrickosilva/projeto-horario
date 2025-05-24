@@ -15,12 +15,16 @@
   <body>
     <header id="inicio">
       <nav>
-        <a href="#inicio" class="cabeçalho"><strong>INÍCIO</strong></a>
-        <a href="#sobre" class="cabeçalho"><strong>SOBRE</strong></a>
-        <a href="#serviços" class="cabeçalho"><strong>SERVIÇOS</strong></a>
-        <a href="#trabalhos" class="cabeçalho"><strong>TRABALHOS</strong></a>
-        <a href="#contatos" class="cabeçalho"><strong>CONTATOS</strong></a>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-links">
+          <a href="#inicio" class="cabeçalho"><strong>INÍCIO</strong></a>
+          <a href="#sobre" class="cabeçalho"><strong>SOBRE</strong></a>
+          <a href="#serviços" class="cabeçalho"><strong>SERVIÇOS</strong></a>
+          <a href="#trabalhos" class="cabeçalho"><strong>TRABALHOS</strong></a>
+          <a href="#contatos" class="cabeçalho"><strong>CONTATOS</strong></a>
+        </div>
       </nav>
+
       <br /><br /><br />
       <p><strong>Pam Nail Designer</strong></p>
       <br />
@@ -258,5 +262,10 @@
         alcance
       </p>
     </footer>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
