@@ -11,19 +11,19 @@ document
       document.getElementById("mensagem").innerText =
         "Por favor, preencha todos os campos antes de agendar.";
       document.getElementById("mensagem").style.color = "red";
-      return; // Sai da função sem agendar
+      return;
     }
 
     document.getElementById("mensagem").innerText =
       "Agendamento confirmado! Redirecionando para o WhatsApp...";
     document.getElementById("mensagem").style.color = "green";
 
-    setTimeout(function () {
-      const numero = "5521973073541";
-      const mensagem = encodeURIComponent(
-        `Agendei meu horário:\nServiço: ${servico}\nData: ${data}\nHorário: ${horario}`
-      );
-      const url = `https://wa.me/${numero}?text=${mensagem}`;
-      window.open(url, "_blank");
-    }, 2000);
+    const numero = "5521973073541";
+    const mensagem = encodeURIComponent(
+      `Agendei meu horário:\nServiço: ${servico}\nData: ${data}\nHorário: ${horario}`
+    );
+    const url = `https://wa.me/${numero}?text=${mensagem}`;
+
+    // Redirecionamento direto
+    window.location.href = url;
   });
