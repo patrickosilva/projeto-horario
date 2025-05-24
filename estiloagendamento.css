@@ -1,10 +1,24 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #834FF0;
+    --cor2: #EC4FF0;
+    --cor3: #B74EEF;
+    --cor4: #8485F5;
+    --cor5: #F04F96;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f0ff;
+  font-family: 'Cascadia Code', Arial, sans-serif;
+  background-color:#f8f0ff;
   padding: 20px;
   text-align: center;
+  letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'Emilys Candy', Arial, Helvetica, sans-serif;
+    color:#8485F5;
 }
 
 form {
@@ -13,6 +27,7 @@ form {
   border-radius: 10px;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #8485F5;
 }
 
 label, select, input {
@@ -21,19 +36,21 @@ label, select, input {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
+  color: #8485F5;
 }
 
 button {
-  background-color: #834FF0;
+  background-color:#8485F5;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Emilys Candy', Arial, Helvetica, sans-serif;
 }
 
 button:hover {
-  background-color: #B74EEF;
+  transform: scale(1.05);
 }
 
 #mensagem {
