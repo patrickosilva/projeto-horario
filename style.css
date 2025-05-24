@@ -34,7 +34,7 @@ nav {
     font-size: medium;
     color: white;
     word-spacing: 10px;
-    padding: 15px;
+    padding: 35px;
     position: fixed;
     background-color:#834FF0;
     width: 100%;
@@ -286,6 +286,45 @@ footer {
   height: 100px;
   background-color:#B74EEF;
 }
+
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #834FF0; 
+        width: 100%;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        z-index: 999;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .nav-links a {
+        padding: 15px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 
 
 
