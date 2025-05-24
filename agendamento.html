@@ -4,9 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agende seu horário</title>
+    <link rel="stylesheet" href="estiloagendamento.css">
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
   </head>
   <body>
-    
+    <h1>Agendamento de Horário</h1>
+
+  <form id="form-agendamento">
+    <label for="servico">Escolha o serviço:</label>
+    <select id="servico" required>
+      <option value="Manicure">Manicure</option>
+      <option value="Pedicure">Pedicure</option>
+      <option value="Spa dos Pés">Spa dos Pés</option>
+      <option value="Postiça Realista">Postiça Realista</option>
+    </select>
+
+    <label for="data">Escolha a data:</label>
+    <input type="date" id="data" required>
+
+    <label for="horario">Escolha o horário:</label>
+    <select id="horario" required>
+      <option value="09:00">09:00</option>
+      <option value="10:30">10:30</option>
+      <option value="14:00">14:00</option>
+      <option value="16:00">16:00</option>
+    </select>
+
+    <button type="submit">Agendar</button>
+  </form>
+
+  <p id="mensagem"></p>
+
+  <script src="scriptagendamento.js"></script>
   </body>
 </html>
