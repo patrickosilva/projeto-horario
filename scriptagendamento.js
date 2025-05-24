@@ -15,5 +15,4 @@ document
     // Exibir mensagem na tela
     document.getElementById("mensagem").innerText =
       "Agendamento realizado com sucesso!";
-
   });
