@@ -4,37 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Agende seu horário</title>
-    <link rel="stylesheet" href="estiloagendamento.css">
+    <link rel="stylesheet" href="estiloagendamento.css" />
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Kaushan+Script&family=Share+Tech+Mono&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Comic+Relief:wght@400;700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&family=Tagesschrift&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
   <body>
     <h1>Agendamento de Horário</h1>
 
-  <form id="form-agendamento">
-    <label for="servico">Escolha o serviço:</label>
-    <select id="servico" required>
-      <option value="Manicure">Manicure</option>
-      <option value="Pedicure">Pedicure</option>
-      <option value="Spa dos Pés">Spa dos Pés</option>
-      <option value="Postiça Realista">Postiça Realista</option>
-    </select>
+    <form id="form-agendamento">
+      <label for="servico">Escolha o serviço:</label>
+      <select id="servico" required>
+        <option value="Manicure">Manicure</option>
+        <option value="Pedicure">Pedicure</option>
+        <option value="Spa dos Pés">Spa dos Pés</option>
+        <option value="Postiça Realista">Postiça Realista</option>
+      </select>
 
-    <label for="data">Escolha a data:</label>
-    <input type="date" id="data" required>
+      <label for="data">Escolha a data:</label>
+      <input type="date" id="data" required />
 
-    <label for="horario">Escolha o horário:</label>
-    <select id="horario" required>
-      <option value="09:00">09:00</option>
-      <option value="10:30">10:30</option>
-      <option value="14:00">14:00</option>
-      <option value="16:00">16:00</option>
-    </select>
+      <label for="horario">Escolha o horário:</label>
+      <select id="horario" required>
+        <option value="09:00">09:00</option>
+        <option value="10:30">10:30</option>
+        <option value="14:00">14:00</option>
+        <option value="16:00">16:00</option>
+      </select>
 
-    <button type="submit">Agendar</button>
-  </form>
+      <button type="submit">Agendar</button>
+    </form>
 
-  <p id="mensagem"></p>
+    <p id="mensagem"></p>
 
-  <script src="scriptagendamento.js"></script>
+    <script src="scriptagendamento.js"></script>
   </body>
 </html>
