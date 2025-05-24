@@ -89,7 +89,6 @@ hr {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 
 }
 
@@ -258,7 +257,7 @@ section#contatos {
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+
 }
 
 .instagram:hover, .whatsapp:hover, .email:hover {
