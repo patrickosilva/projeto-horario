@@ -34,25 +34,13 @@
         <option value="16:00">16:00</option>
       </select>
 
-      <button type="submit" onclick="agendarWhatsapp()">Agendar</button>
+      <button type="submit">Agendar</button>
     </form>
 
     <p id="mensagem"></p>
 
     <script src="scriptagendamento.js"></script>
 
-    <script>
-      function agendarWhatsapp() {
-        document.getElementById("mensagem").innerText =
-          "Agendamento confirmado! Redirecionando para o WhatsApp...";
-
-        setTimeout(function () {
-          const numero = "5521973073541";
-          const mensagem = encodeURIComponent("Agendei meu horário 😊!");
-          const url = `https://wa.me/${numero}?text=${mensagem}`;
-          window.open(url, "_blank");
-        }, 2000); // 2000 milissegundos = 2 segundos
-      }
-    </script>
+    
   </body>
 </html>
