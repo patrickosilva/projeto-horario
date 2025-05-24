@@ -7,12 +7,24 @@ document
     const data = document.getElementById("data").value;
     const horario = document.getElementById("horario").value;
 
-    const mensagem = `Novo agendamento:
-  Serviço: ${servico}
-  Data: ${data}
-  Horário: ${horario}`;
+    if (!servico || !data || !horario) {
+      document.getElementById("mensagem").innerText =
+        "Por favor, preencha todos os campos antes de agendar.";
+      document.getElementById("mensagem").style.color = "red";
+      return; // Sai da função sem agendar
+    }
 
-    // Exibir mensagem na tela
     document.getElementById("mensagem").innerText =
-      "Agendamento realizado com sucesso!";
+      "Agendamento confirmado! Redirecionando para o WhatsApp...";
+    document.getElementById("mensagem").style.color = "green";
+
+    setTimeout(function () {
+      const numero = "5521973073541";
+      const mensagem = encodeURIComponent(
+        `Agendei meu horário:\nServiço: ${servico}\nData: ${data}\nHorário: ${horario}`
+      );
+      const url = `https://wa.me/${numero}?text=${mensagem}`;
+      window.open(url, "_blank");
+    }, 2000);
   });
+
