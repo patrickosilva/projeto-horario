@@ -16,8 +16,4 @@ document
     document.getElementById("mensagem").innerText =
       "Agendamento realizado com sucesso!";
 
-    // Enviar e-mail (Exemplo de como poderia ser com mailto)
-    window.location.href = `mailto:pampamsilv@gmail.com?subject=Novo Agendamento&body=${encodeURIComponent(
-      mensagem
-    )}`;
   });
